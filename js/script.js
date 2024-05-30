@@ -39,7 +39,10 @@ createApp({
     },
 
     methods: {
-       
-        },
+        removeItem(index) {
+            this.shoppingList.splice(index, 1);
+        }
+    }
+
     
 }).mount("#app");
