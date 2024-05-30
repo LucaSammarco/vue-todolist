@@ -21,7 +21,8 @@
             <div class="d-flex align-items-center" >
             
                 <ul>
-                    <li v-for="(item, index) in shoppingList" :key="index" :class="{ done: item.done }">
+                    <li v-for="(item, index) in shoppingList" :key="index" :class="item.done ? 'done' : ''"
+                    >
                         {{ item.text }}
                     </li>
 
