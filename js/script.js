@@ -32,7 +32,9 @@ createApp({
                     text: "Carne",
                     done: true
                 }
-            ]
+            ],
+
+            newItemText: ""
         };
 
        
@@ -41,8 +43,14 @@ createApp({
     methods: {
         removeItem(index) {
             this.shoppingList.splice(index, 1);
+        },
+
+        newItem(newItemText)
+        {
+            this.shoppingList.push({ text: this.newItemText, done: false });
+
+            this.newItemText = ""
         }
     }
-
     
 }).mount("#app");

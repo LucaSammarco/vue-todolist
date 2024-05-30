@@ -28,6 +28,7 @@
                         <span @click="removeItem(index)">x</span>
                     </li>
 
+                    <input type="text" v-model="newItemText" class="form-control"  @keyup.enter="newItem(newItemText)">
                 </ul>
                         
             </div>
