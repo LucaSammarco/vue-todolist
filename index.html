@@ -18,8 +18,8 @@
        
         <div class="container">
                 
-            <div class="d-flex align-items-center" >
-            
+            <div class="d-flex align-items-center flex-column" >
+            <H2 class="m-5">Lista della Spesa</H2>
                 <ul>
                     <li v-for="(item, index) in shoppingList" :key="index" :class="item.done ? 'done' : ''"
                     >
@@ -28,7 +28,7 @@
                         <span @click="removeItem(index)">x</span>
                     </li>
 
-                    <input type="text" v-model="newItemText" class="form-control"  @keyup.enter="newItem(newItemText)">
+                    <input type="text" v-model="newItemText" placeholder="Nuovo elemento" class="form-control mt-5"  @keyup.enter="newItem(newItemText)">
                 </ul>
                         
             </div>
