@@ -11,6 +11,7 @@ Se la proprietà done è uguale a true, visualizzare il testo del todo sbarrato.
     
     HC
     *   Stampiamo gli items della lista con un v-for
+    *   aggiungere la classe .done agli elemnti con done true
 
 
 
