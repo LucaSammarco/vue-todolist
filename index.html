@@ -15,24 +15,25 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
     <div id="app">
+       
         <div class="container">
-            <div class="slider-wrapper d-flex align-items-center" tabindex="0">
-         
+                
+            <div class="d-flex align-items-center" >
+            
+                <ul>
+                    <li v-for="(item, index) in shoppingList" :key="index" >
+                        
+                        {{ item.text }}
+                    </li>
 
-                <div class="item" v-for="(slide, index) in slides" :key="index" v-show="index === activeIndex">
-
-                    <img :src="slide.image" :alt="slide.title" />
-
-                    <div class="text">
-                        <h3>{{ slide.title }}</h3>
-                        <p>{{ slide.text }}</p>
-                    </div>
-                    
-                </div>
-
+                </ul>
+                        
             </div>
+        
         </div>
+        
     </div>
+
 </main>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
