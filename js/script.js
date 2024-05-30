@@ -34,5 +34,12 @@ createApp({
                 }
             ]
         };
-    }
+
+       
+    },
+
+    methods: {
+       
+        },
+    
 }).mount("#app");

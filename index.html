@@ -23,7 +23,9 @@
                 <ul>
                     <li v-for="(item, index) in shoppingList" :key="index" :class="item.done ? 'done' : ''"
                     >
-                        {{ item.text }}
+                        {{ item.text }} 
+
+                        <span>x</span>
                     </li>
 
                 </ul>
