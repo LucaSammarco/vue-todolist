@@ -23,7 +23,7 @@
                 <ul>
                     <li v-for="(item, index) in shoppingList" :key="index" :class="item.done ? 'done' : ''"
                     >
-                        {{ item.text }} 
+                        {{ item.text }} BRANCH PROVA
 
                         <span @click="removeItem(index)">x</span>
                     </li>
@@ -40,6 +40,7 @@
 </main>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+
 <script type="text/javascript" src="js/script.js"></script> 
 
 </body>
